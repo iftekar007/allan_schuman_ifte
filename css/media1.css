@@ -1,0 +1,1563 @@
+/* lg */
+
+
+
+@media(max-width:1600px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width: 180%;
+    }
+
+    .probonoblock1left { padding: 0px; position: relative; padding-left:0px!important; }
+
+    .probonoblock1left .probonoblock1left_img{ margin: 0;
+        padding: 0;
+        width: 100%; }
+
+
+
+    .probonoblock1left_table{  top:35%;  }
+
+    .probonoblock1leftcontentinner h2 {
+
+        font-size: 39px;
+
+    }
+
+/*
+    .probonoblock1left {
+
+        padding: 0px 119px 0px 119px;
+
+    }
+*/
+
+    .probonoblock1right {
+
+        padding: 0px 20px 20px 20px;
+
+    }
+
+    .probonoblock2left {
+
+        padding: 43px 24px;
+
+    }
+
+  .probonoblock2right {
+
+        padding: 95px 119px 43px 119px;}
+
+
+
+    .staffdetailright {
+
+        float: none;
+
+        margin: 0 auto;
+
+        padding: 0;
+
+        text-align: left;
+
+        width: 100%;
+
+        padding-bottom: 10px;
+
+    }
+    .doublevideo .leftvideo .videoWrapper {
+        height: auto;
+    }
+    .doublevideo .leftvideo .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .doublevideo .rightvideo .videoWrapper {
+        height: auto;
+    }
+    .doublevideo .rightvideo .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .probonoblock2left .doublevideo .rightvideo {
+        height: auto;
+    }
+    .probonoblock2left .doublevideo .leftvideo {
+        height: auto;
+    }
+    .probonoblock2leftcontent .videoWrapper {
+        height: auto;
+    }
+    .doublevideo .rightvideo .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .doublevideo .leftvideo .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+
+
+@media(max-width:1400px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:220%;
+    }
+
+    .probonoblock1left_table{  top:30%;  }
+}
+
+
+
+@media(max-width:1280px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:240%;
+    }
+
+
+}
+
+
+
+@media(max-width:1100px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:290%;
+    }
+
+
+}
+
+
+@media(max-width:991px){
+
+    .probonoblock1left{ padding:0px!important;}
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:100%!important;
+    }
+
+    .probonoblock1left_table{ position: absolute; left: 0%; top: 30%; text-align: center; width:auto; padding:0px;  }
+
+    .probonoblock1leftcontent {
+        margin: 0 auto;
+        padding: 30px 5% !important;
+        text-align: center;
+        width: 91% !important;
+    }
+}
+
+
+@media(max-width:767px){
+
+    .probonoblock1left_table{ position: absolute; left: 0%; top: 20%; text-align: center; width:auto; padding:25px;  }
+
+}
+
+
+@media(max-width:620px){
+
+    .probonoblock1left_table{ position: absolute; left: 0%; top: 10%; text-align: center; width:auto; padding:25px;  }
+
+}
+
+@media(max-width:550px){
+
+    .probonoblock1left_table{ position: absolute; left: 0%; top: 0%; text-align: center; width:auto; padding:25px;  }
+
+}
+
+@media(max-width:500px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:100%!important;
+    }
+}
+
+
+@media(max-width:480px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:115%!important;
+    }
+}
+
+
+@media(max-width:460px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:125%!important;
+    }
+}
+
+
+@media(max-width:440px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:130%!important;
+    }
+}
+
+@media(max-width:420px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:140%!important;
+    }
+}
+
+@media(max-width:400px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:150%!important;
+    }
+}
+
+
+@media(max-width:380px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:174%!important;
+    }
+}
+
+@media(max-width:360px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:180%!important;
+    }
+}
+
+@media(max-width:320px){
+
+    .probonoblock1left .probonoblock1left_img img {
+        width:240%!important;
+    }
+}
+
+
+@media(max-width:1366px){
+
+   /* .probonoblock1left {
+
+        padding: 0px 70px 0px 70px;
+
+    }*/
+
+
+    .probonoblock2right {
+
+        padding: 60px 60px 43px 60px;
+
+}
+
+}
+
+
+
+@media(max-width:1300px){
+
+/*    .probonoblock1left {
+
+        padding: 0px 60px 0px 60px;
+
+    }*/
+
+    .probonoblock1rightcontent h2 {
+
+        font-size: 26px;
+
+    }
+
+    .probonoblock2right {
+
+        padding: 30px 60px 43px 60px;
+
+    }
+
+    .probonoblock1rightcontent h2 {
+
+        font-size: 22px;
+
+        margin-top: 30px;
+
+    }
+
+}
+
+
+
+@media(max-width:1260px){
+
+    .probonoblock1right {
+
+        padding: 43px 20px 43px 20px;
+
+    }
+
+    .probonoblock2left {
+
+        padding: 43px 70px 43px 70px;
+
+    }
+
+    .staffdetailleftblock {
+
+        padding: 0px 30px 0px 0px;
+
+    }
+
+}
+
+
+
+@media(max-width:1200px){
+
+    .probonoblock1leftcontentinner h2 {
+
+        font-size: 36px;
+
+    }
+
+    .probonoblock2leftcontent h2 {
+
+        font-size: 26px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:1199px){
+    .fbheader {
+        margin: 0px;
+        padding: 0px;
+        float: right;
+        margin-top: 20px;
+        margin-right: auto;
+        display: block;
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        width: 152px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .menublock .navbar-nav > li a:last-of-type {
+    /*    border-bottom: solid 1px #2e2e2e !important;*/
+    }
+    .singlestaff {
+
+        width: 23.24%;
+
+    }
+
+
+
+    .staffdetailleft {
+
+        float: none;
+
+        margin: 0;
+
+        padding: 0;
+
+        text-align: center;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+
+    .staffdetailleftimg {
+
+        height: auto;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        display: block;
+
+        float: none;
+
+        text-align: center;
+
+    }
+
+    .staffdetailleft img{max-width: 100%; border:solid 2px #ccc;}
+
+    .staffdetailright {
+
+        float: none;
+
+        margin: 0 auto;
+
+        padding: 0;
+
+        text-align: center;
+
+        width: 100%;
+
+        padding-bottom: 10px;
+
+        display: block;
+
+        clear: both;
+
+    }
+
+    .staffdetailright h1 {
+
+        margin-top: 30px;
+
+    }
+
+    .staffdetailblockwrapper {
+
+        padding-top: 10px;
+
+    }
+
+    .staffdetailright p {
+
+        padding-bottom: 20px;
+
+    }
+
+    .staffdetailright h3 {
+
+        padding-top: 40px;
+
+    }
+
+    .probonoblock2left {
+
+        padding: 86px 119px 43px 119px;
+
+    }
+
+  /*  .probonoblock1left {
+
+        padding: 0px 60px 0px 60px;
+
+    }*/
+
+    .probonoblock1right {
+
+        padding: 0px 20px 0px 20px;
+
+    }
+
+    .probonoblock2left {
+
+        padding: 76px 60px 43px 60px;
+
+    }
+
+    .probonoblock2right {
+
+        padding: 200px 60px 43px 60px;
+
+    }
+
+
+
+    .leftvideo {
+
+        width: 100%;
+
+        float: none;
+
+    }
+
+    .rightvideo {
+
+        width: 100%;
+
+        float: right;
+
+    }
+
+    .singleexpertise {
+
+        width: 30.1%;
+
+    }
+
+    .singleexpertisebtn {
+
+        width: 50%;
+
+    }
+
+
+    .staffdetailleftblock {
+
+        float: left;
+
+        padding: 0px 20px 0px 0px;
+
+    }
+
+    .staffdetailleftimg {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        display: block;
+
+        float: none;
+
+        text-align: center;
+
+        width: 404px;
+
+    }
+
+
+    .galleryimage {
+
+        width: 23.24%;
+
+    }
+
+    .mainhoverdiv {
+        height: 169px;
+    }
+    .probonoblock2leftcontent .videoWrapper .videoplay {
+        position: absolute;
+        top: 40%;
+        left: 43%;
+        width: 15%;
+    }
+    .probonoblock2leftcontent .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+
+
+@media(max-width:1170px){
+
+
+
+
+
+    .areaofexpertisebannerwrapper {
+
+        margin-top: 0px;
+
+    }
+
+
+
+
+
+
+
+    .staffbannerwrapper{margin-top: 0px;}
+
+    .staffbannerwrapper{margin-top: 0px;}
+
+    .staffdetailblockwrapper{margin-top: 0px;}
+
+    .probonobannerwrapper{margin-top: 0px;}
+
+    .imagegallerybannerwrapper{margin-top: 0px;}
+
+    .singlestaff {
+
+        width: 23.24%;
+
+    }
+    .galleryimage {
+
+        width: 24%;
+
+    }
+
+
+
+    .probonoblock1leftcontent {
+
+        width: 83%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .probonoblock2left {
+
+        padding: 43px 60px 43px 60px;
+
+    }
+
+    .probonoblock1right {
+
+        padding: 0px 20px 0px 20px;
+
+    }
+
+   /* .probonoblock1left {
+
+        padding: 0px 60px 0px 60px;
+
+    }
+*/
+}
+
+
+
+@media(max-width:1100px){
+
+    .probonoblock1leftcontentinner h2 {
+
+        font-size: 30px;
+
+    }
+
+    .probonoblock2rightcontentinner h2 {
+
+        font-size: 30px;
+
+        margin-bottom: 30px;
+
+    }
+
+    .probonoblock2rightcontent {
+
+        padding: 30px 34px;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        padding: 30px 34px;
+
+    }
+
+    .probonoblock1leftcontentinner h2 {
+
+        margin-bottom: 30px;
+
+    }
+
+ /*   .probonoblock1left {
+
+        padding: 0px 60px 0px 60px;
+
+    }
+*/
+}
+
+
+
+@media(max-width:1024px){
+
+    .probonoblock1leftcontent {
+
+        padding: 59px 34px;
+
+    }
+
+    .probonoblock1leftcontentinner h2 {
+
+        font-size: 30px;
+
+    }
+
+    .probonoblock2rightcontentinner h2 {
+
+        font-size: 30px;
+
+    }
+
+    .probonoblock1rightcontent h2 {
+
+        font-size: 20px;
+
+        margin: 30px 0;
+
+    }
+
+
+
+}
+
+@media(max-width:991px){
+    .doublevideo {
+        width: 94%;
+        float: none;
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+    .singleexpertise {
+
+        width: 45.8%;
+
+    }
+
+    .areaofexpertisebannerblock h2 {
+
+        line-height: normal;
+
+    }
+
+    .areaofexpertiseblock2 .container {
+
+        padding-top: 45px;
+
+        padding-bottom: 45px;
+
+        text-align: center;
+
+    }
+
+    .btncontactus {
+
+        font-size: 20px;
+
+        height: 16px;
+
+        right: -80px;
+
+        width: 158px;
+
+    }
+
+    .singlestaff {
+
+        width: 31.28%;
+
+    }
+
+    .singlestaff:nth-child(4n+4){margin-right: 20px;}
+
+    .singlestaff:nth-child(3n+3){margin-right: 0px;}
+
+    .staffbannerblock h2 {
+
+        line-height: normal;
+
+    }
+
+    .probonoblock1 [class*="col-"] {
+
+        float: none;
+
+        display: block;
+
+        vertical-align: top;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        width: 100%;
+
+        padding: 35px 0px;
+
+        height: auto;
+
+
+    }
+
+    .probonoblock1leftcontent {
+
+        padding: 59px 34px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        width: 81%;
+
+    }
+
+    .videoWrapper {
+
+        padding-bottom: 50%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        width: 100%;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        padding: 30px 34px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .probonoblock1leftcontentinner h2 {
+
+        margin-bottom: 30px;
+
+    }
+
+
+
+    .probonoblock2leftcontent {
+        float: none;
+        width: 94%;
+        display: block;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .probonoblock2 [class*="col-"] {
+
+        float: none;
+
+        display: block;
+
+        vertical-align: top;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        width: 100%;
+
+        padding: 30px 0px;
+
+    }
+
+    .probonoblock2rightcontent {
+
+        padding: 59px 34px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .probonoblock2rightcontent {
+
+        width: 84%;
+
+    }
+
+    .videoWrapper {
+
+        padding-bottom: 50%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+
+    }
+
+    .probonoblock2rightcontent {
+
+        padding: 30px 34px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .probonoblock2rightcontentinner h2 {
+
+        margin-bottom: 30px;
+
+    }
+
+    .doublevideo {
+
+        margin-bottom: 30px;
+
+    }
+
+   .staffdetailblockwrapper {
+
+        padding-top: 20px;
+
+        width: 92%;
+
+    }
+
+    .staffdetailleftblock {
+
+        float: none;
+
+        padding: 0px 20px 0px 0px;
+
+    }
+
+    .staffdetailright {
+
+        text-align: center;
+
+    }
+
+
+    .galleryimage {width: 32.2%;}
+
+    .galleryimage:nth-child(4n+4){margin-right: 10px;}
+
+    .galleryimage:nth-child(3n+3){margin-right: 0px;}
+
+    .probonoblock2leftcontent .videoWrapper {
+        height: auto;
+    }
+    .probonoblock2left .doublevideo .leftvideo {
+        height: 240px;
+    }
+    .probonoblock2left .doublevideo .rightvideo {
+        height: 240px;
+    }
+    .doublevideo .leftvideo .videoWrapper {
+        position: relative;
+        height: 240px;
+    }
+    .doublevideo .rightvideo .videoWrapper {
+        position: relative;
+        height: 240px;
+    }
+    .leftvideo {
+        margin-bottom: 30px;
+    }
+    .probonoblock2leftcontent .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .probonoblock2leftcontent .videoWrapper .videoplay {
+        top: 40%;
+    }
+}
+
+@media(max-width:920px){
+
+#gallerylists{width: 98%; margin-left: auto; margin-right: auto; float: none;  display: block;}
+    .galleryimage {
+        width: 32%;
+    }
+    .mainhoverdiv {
+        width: 97%;
+    }
+}
+
+@media(max-width:800px){
+
+    .btncontactus {
+
+        font-size: 17px;
+
+        right: -73px;
+
+        width: 136px;
+
+        height: 14px;
+
+    }
+
+    .staffblock1 h2 {
+
+        width: 90%;
+
+    }
+
+    .staffdetailblockwrapper {
+
+        padding-top: 20px;
+
+    }
+
+    .staffdetailleftimg {
+
+        height: auto;
+
+    }
+
+    .staffdetailright h1 {
+
+        margin-top: 30px;
+
+    }
+
+    .videoWrapper {
+
+        width: 100%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+
+}
+
+@media(max-width:767px){
+
+    .probonoblocktext {
+        margin: 0px auto;
+        max-width: 94%;
+    }
+
+    .singleexpertise {
+
+        width: 80%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        float: none;
+
+    }
+
+    .singleexpertisebtn {
+
+        width: 50%;
+
+    }
+
+
+
+    .btncontactus {
+
+        font-size: 14px;
+
+        right: -82px;
+
+        width: 136px;
+
+        height: 2px;
+
+    }
+
+    .stafflist .container {
+
+        padding-left: 0;
+
+        padding-right: 0px;
+
+        width: 70%;
+
+    }
+
+    .singlestaff {
+
+        width: 47%;
+
+    }
+
+    .singlestaff:nth-child(4n+4){margin-right: 20px;}
+
+    .singlestaff:nth-child(3n+3){margin-right: 20px;}
+
+    .singlestaff:nth-child(2n+2){margin-right: 0px;}
+
+    .probonoblock1leftcontent {
+
+        width: 80%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+    .galleryimage {width: 48.7%;}
+    .galleryimage:nth-child(4n+4){margin-right: 10px;}
+    .galleryimage:nth-child(3n+3) {margin-right: 10px;}
+    .galleryimage:nth-child(2n+2){margin-right: 0px;}
+}
+
+
+
+@media(max-width:720px){
+
+}
+
+
+
+
+
+@media(max-width:680px){
+    .galleryimage {
+        width: 48.6%;
+    }
+}
+
+
+
+
+
+@media(max-width:660px){
+
+
+
+}
+
+
+
+@media(max-width:640px){
+
+    .singleexpertisebtn {
+
+        width: 70%;
+
+    }
+
+
+    .areaofexpertiseblock1 h2 {
+
+        width: 80%;
+
+    }
+
+    .areaofexpertisebannerblock h2 {
+
+        font-size: 40px;
+
+    }
+
+    .areaofexpertiseblock1 p {
+
+        width: 80%;
+
+    }
+
+    .singlestaff {
+
+        width: 280px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        float: none;
+
+        display: block;
+
+    }
+
+    .singlestaff:nth-child(4n+4){margin-right: auto;}
+
+    .singlestaff:nth-child(3n+3){margin-right: auto;}
+
+    .singlestaff:nth-child(2n+2){margin-right: auto;}
+
+    .stafftitle h2 {
+
+        font-size: 25px;
+
+        line-height: normal;
+
+        text-align: center;
+
+    }
+
+    .staffbannerblock h2 {
+
+        font-size: 50px;
+
+    }
+
+
+
+    .probonoblock1rightcontent{
+
+        width: 90%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        display: block;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        width: 78%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+}
+
+@media(max-width:620px){
+
+    .probonobannerblock h2 {
+
+        font-size: 42px;
+
+        line-height: normal;
+
+    }
+
+    .probonoblock2rightcontent {
+
+        width: 76%;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        width: 76%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .probonoblock2 [class*="col-"] {
+
+        padding: 30px 0px;
+
+    }
+
+}
+
+@media(max-width:550px){
+
+   .staffdetailleftblock .fullwidthimg2 {
+
+        height: 120px;
+
+        overflow: hidden;
+
+        margin-bottom: 20px;
+
+    }
+
+    .mainhoverdiv img {
+
+        max-width: 100%;
+
+    }
+
+}
+
+
+
+@media(max-width:530px){
+    .probonoblock2left .doublevideo .leftvideo {
+        width: 100%;
+        float: none;
+        height: 240px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .probonoblock2left .doublevideo .rightvideo {
+        width: 100%;
+        float: none;
+        height: 240px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+}
+
+
+
+
+
+@media(max-width:520px){
+
+
+
+    .probonoblock1leftcontent {
+
+        width: 74%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .stafflist .container {
+
+        padding-left: 0;
+
+        padding-right: 0px;
+
+        width: 100%;
+
+    }
+
+    .staffdetailleftblock {
+
+        width: 404px;
+
+        float: none;
+
+        padding: 0px;
+
+        margin: 0 auto;
+
+    }
+    .galleryimage {
+        width: 100%;
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+    .probonoblock1leftcontent {
+
+        width: 68%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .imagegallerybannerblock h2 {
+        padding: 32px 5px 0px 5px;
+        font-size: 32px;
+    }
+    .staffdetailleftimg {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+        text-align: center;
+        width: 90%;
+    }
+    .halfleftimgdiv {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .halfrightimgdiv {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .probonoblock2leftcontent .videoWrapper img {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .fbheader1 {
+        right: 32%;
+    }
+    .probonoblock2left .doublevideo .leftvideo {
+        width: 100%;
+        float: none;
+        height: auto;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .probonoblock2left .doublevideo .rightvideo {
+        width: 100%;
+        float: none;
+        height: auto;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:440px){
+
+    .probonobannerblock h2 {
+
+        font-size: 36px;
+
+        line-height: normal;
+
+    }
+
+
+
+}
+
+
+
+@media(max-width:420px){
+
+    .probonoblock1rightcontent h2 {
+
+        font-size: 18px;
+
+        margin: 30px 0;
+
+    }
+
+    .probonoblock2leftcontent h2 {
+
+        font-size: 18px;
+
+    }
+
+    .singleexpertisebtn {
+
+        font-size: 18px;
+
+    }
+    .fbheader1 {
+        right: 25%;
+    }
+}
+
+
+
+@media(max-width:360px){
+
+    .probonobannerblock h2 {
+
+        font-size: 30px;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        width: 60%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .probonoblock1rightcontent h2 {
+
+        font-size: 16px;
+
+        margin: 30px 0;
+
+    }
+
+    .probonoblock2leftcontent h2 {
+
+        font-size: 16px;
+
+    }
+
+    .probonoblock2rightcontent {
+
+        width: 68%;
+
+    }
+
+    .probonoblock2leftcontent img {
+
+        max-width: 100%;
+
+    }
+
+    .probonoblock2rightcontent img {
+
+        max-width: 100%;
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:320px){
+
+    .singleexpertisebtn {
+
+        font-size: 17px;
+
+    }
+
+    .probonobannerblock {
+
+        padding-bottom: 15px;
+
+    }
+
+    .probonobannerblock h2 {
+
+        padding: 30px 5px 15px 5px;
+
+    }
+
+
+
+    .staffdetailbannerblock {
+
+        padding-bottom: 15px;
+
+    }
+
+    .staffdetailbannerblock h2 {
+
+        padding: 30px 5px 15px 5px;
+
+    }
+
+    .probonoblock1leftcontent {
+
+        width: 68%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+
+}
+
+
+

@@ -1,0 +1,182 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Banner Manager
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a ui-sref="Blog-list">Manage Banner </a></li>
+            <li><a href="javascript:void(0)" class="active"> Edit Banner </a></li>
+
+        </ol>
+    </section>
+
+
+
+
+    <section class="content">
+        <div class="row">
+
+
+            <!-- left column -->
+            <div class="col-md-12">
+
+                <!-- general form elements -->
+                <div class="box box-primary" style="overflow:hidden; padding-bottom:40px;">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title"></h3>
+                        <h3 class="box-title">Edit Banner</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+
+                    <div class="formsection">
+                        <form angular-validator-submit="editformsubmit()"  name="editform" role="form" novalidate angular-validator>
+
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label >Banner* :</label>
+                                    <input type="button" class="searchbtn btn  btn-md"   value="Upload" ngf-drop ngf-select ng-model="picturupload" ngf-drag-over-class="{accept:'dragover', reject:'dragover-err', delay:100}" ngf-multiple="false" ngf-allow-dir="true" accept="'image/*'" ngf-drop-available="dropAvailable" ngf-capture="camera">
+                                    <div class="progress" ng-show="picturupload[0].progress >= 0"> <div style="width:{{product_upload[0].progress}}%; background:#00c0ef;" ng-bind="picturupload[0].progress + '%'"></div></div>
+                                    <div class="clearfix"></div>
+                                    <span >Please upload more than 1995pxX895px image to get best result</span>
+                                    <div class="imgclasswrapper"><div ng-if="imgsrc"><img src="nodeserver/uploads/{{imgsrc}}" style="max-width:100%;" /></div></div>
+                                    <div><img ng-hide="loadershow" class="imgclass" src="images/loading.gif" ></div>
+                                    <div><img ng-hide="progressshow" class="imgclass1" src="images/processing.gif" ></div>
+                                    <div><img ng-show="submitload"  class="imgclass4" src="images/submitimg.gif" ></div>
+                                    <div class="clearfix"></div>
+                                    <input type="hidden" class="form-control"  name="picture"
+                                           ng-model="form.file"
+                                           required-message="'Please upload a banner'"
+                                           required>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <input ng-if="imgsrc" class="searchbtn btn  btn-md" type="button" ng-click="imagecrop()" value="Image Crop">
+
+
+                                </div>
+                                <div class="form-group">
+                                    <label >Priority* :</label>
+                                    <input type="text" class="form-control" placeholder="Priority" name="priority"
+                                           ng-model="form.priority"
+                                           required-message="'Priority can not be blank.'"
+                                           required>
+                                </div>
+                            </div>
+
+        
+				<div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                                <button ng-disabled="isDisabled" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div><!-- /.box -->
+
+
+                    <div style="clear:both;"></div>
+                </div>
+
+            </div>   <!-- /.row -->
+        </div>
+    </section>
+
+
+
+
+</div>
+
+
+
+<script type="text/ng-template" id="youtubeVideo2">
+
+    <div class="ngdialog-message" id="youtubemodal">
+
+        <h4>Select Video</h4>
+
+        <div class="youtubeVideo">
+
+            <img src="images/newloginclose.png" ng-click="cancel()" style="cursor: pointer;"  alt="" class="videopopupclose ngdialog-close" />
+
+            <div ng-repeat="c in vids">
+
+                <div style="margin-bottom:10px;" class="embed-responsive embed-responsive-16by9 video-wrapper" >
+                    <!--         <iframe class="embed-responsive-item" video-id="c.id.videoId" width="80%" height="400"></iframe>
+         -->
+                    <youtube-video class="embed-responsive-item" video-id="c.id.videoId"></youtube-video>
+
+                    <!--<img src="https://i.ytimg.com/vi/{{c.id.videoId}}/mqdefault.jpg" width="100%">
+
+                    <img src="images/`youtube-playbtn.png" class="paly_video"  ng-click="playYvideo(c.id.videoId)" style="cursor:pointer;">-->
+
+                </div>
+
+                <h1>{{c.snippet.title}}</h1>
+
+                <a href="javascript:void(0)" ng-click="addYtVideo1(c)" class="vidAddBtn">ADD</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+
+
+
+<script type="text/ng-template" id="mymodal1">
+
+    <div class="modal-header clsbtn">
+
+        <a class="close" ng-click="modalClose()">&times;</a>
+
+        <h4>&nbsp;</h4>
+
+    </div>
+
+    <div class="modal-body">
+
+        <div ng-show="pLoad">Loading Image...<img src="images/ajax_loading.gif" /></div>
+        <div class="imgclasssave" ng-show="cropsaving">Saving...<img src="images/ajax_loading.gif" /></div>
+        <div class="image-editor1">
+
+            <div style="overflow:hidden; width:783px; margin:0 auto;">
+
+                <div class="cropit-image-preview-container">
+
+                    <div class="cropit-image-preview"  ng-mousemove="changepreview1()"></div>
+
+                </div>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <input type="range" class="cropit-image-zoom-input"  name="range1" ng-model="range1" ng-change="changepreview1()">
+
+            </div>
+
+        </div>
+
+        <div style="overflow:hidden; margin:10px auto; margin-top:14px; display:block; width:391px;">
+
+            <img style="width: 100%;" src="{{imagedata2}}" ng-show="imagedata2">
+
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+
+        <div style="width:118px; margin:0 auto;">
+
+            <a href="javascript:void(0);" class="btn btn btn-primary" ng-click="crop1()" data-original-title="" style="width:116px; margin:4px;" ng-disabled="cropsaveDisabled">Crop & Save</a>
+            <div ng-show="cropsaving">Saving...<img src="images/ajax_loading.gif" /></div>
+            <!--<a href="javascript:void(0);" class="btn btn btn-primary" ng-click="modalClose()" data-original-title="" style="width:62px; margin:4px;">Close</a>-->
+
+        </div>
+
+    </div>
+
+</script>

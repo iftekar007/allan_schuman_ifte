@@ -1,0 +1,290 @@
+<!--
+<style>
+
+	.mapaginagiton .pagination a{
+
+		background : none !important;
+
+		border : none !important;
+
+		color : #04b5ca !important;		
+
+	}
+
+	.mapaginagiton .pagination a:hover{
+
+		background: #04b5ca none repeat scroll 0 0!important;
+
+		color : #fff !important;		
+
+	}
+
+	.pagination .active a{
+
+		background: #04b5ca none repeat scroll 0 0!important;
+
+		color: #fff!important;
+
+	}
+
+	.mapaginagiton .pagination .pagination-first a,.mapaginagiton .pagination .pagination-prev a,.mapaginagiton .pagination .pagination-next a,.mapaginagiton .pagination .pagination-last a{
+
+		background: #ffffff none repeat scroll 0 0 !important;
+
+		border: 1px solid #04b5ca !important;
+
+		display:block;
+
+		border-radius : 0 !important;
+
+	}
+
+	.mapaginagiton .pagination .pagination-first a:hover,.mapaginagiton .pagination .pagination-prev a:hover,.mapaginagiton .pagination .pagination-next a:hover,.mapaginagiton .pagination .pagination-last a:hover{
+
+		background: #04b5ca none repeat scroll 0 0 !important;
+
+	}
+
+	.mapaginagiton .disabled{
+
+		display : none !important;		
+
+	}
+
+</style>
+-->
+
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+   /* $(function(){
+
+        stLight.options({publisher: "45137db7-8b13-453d-a8c8-ac5d36794d2e", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+    });*/
+
+    $(window).load( function(){
+        console.log('000');
+        stLight.options({publisher: "45137db7-8b13-453d-a8c8-ac5d36794d2e", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+    });
+</script>
+
+<style>
+    .stButton .chicklets{
+        font-size:14px !important;
+        color: #000 !important;
+        height: 24px !important;
+        line-height: 20px !important;
+        padding-left: 30px !important;
+    }
+    .stButton .sharethis{
+        background-image: url(../images/sharethis.png);
+    }
+</style>
+
+
+
+
+<div class="container-fluid mediaarticles1wrapper">
+
+   <!-- <div class="mediaarticlesbannerblock">
+
+        <h2></h2>
+
+    </div>-->
+
+    <div class="mediaarticles1wrapperblock">
+        <h2><content name='mediaheading15771157a6a9ef07747df6686' id='5771157a6a9ef07747df6686' > </content></h2>
+        <div class="mediaarticles1wrapperblockimg">
+            <content name='mediaarticles1wrapperblockimg57bd988e6d2917be592c2e13' id='57bd988e6d2917be592c2e13'  imgwidth="2868" imgheight="888" > </content>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+        <div class="container-fluid mediaarticlesblockcontain">
+
+
+
+            <div class="container">
+
+                <div class="mediaarticlesblockright">
+
+
+
+                    <div class="mediaarticlesblockright_text">
+
+
+
+                        <input type="text" class="masearchbox" name="search" ng-model="searchkey" placeholder="Type Your Search">
+
+                <input type="button" class="masearchbtn" value="">
+
+                <div class="clearfix"></div>
+
+
+
+                <h2>Media Types</h2>
+
+
+
+
+
+                <div class="rediodiv1">
+
+				<!--<input id="radio1" ng-click="govideo()" type="radio" name="radio" value="1" checked="checked">-->
+
+				<a ui-sref="media-video" ><label>Videos</label></a><span> ({{(totalVideos > 1)?totalVideos+" Videos":totalVideos+" Video"}})</span>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="rediodiv1">
+
+				<!--<input id="radio2" ngclick="goarticle()" type="radio" name="radio" value="2">-->
+
+				<a ui-sref="media-articles" ><label>Articles</label></a><span> ({{(totalArticles > 1)?totalArticles+" Articles":totalArticles+" Article"}})</span>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+
+
+
+
+                        <div class="clearfix"></div>
+
+
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+
+
+             <div class="mediaarticlesblockleft">
+
+
+
+                 <div class="mediaarticlesblock_row" ng-repeat=" item in  filterResult = (medialist |filter:{status:1} |orderBy:'priority':true | filter:search)  | startFrom:(currentPage-1)*perPage | limitTo:perPage ">
+
+                     <h2 ng-bind="item.title | limitText:50"></h2>
+
+                     <!--<h3 ng-bind="showAutor(item)"></h3>-->
+
+                     <h3>{{item.createdtime | date:'MMM dd, yyyy'}}  by {{item.createdby}}</h3>
+
+
+
+
+
+                     <div class="mapostblock">
+
+                         <div class="mapost_text" ng-bind-html="item.description | limitHtml: 200"></div>
+
+                         <div class="mapost_link" >
+
+                             <!--  <a href="javascript:void(0)" class="sharethislink"><img src="../images/sharethis.png" alt="#"> Share this</a>-->
+
+                             <!-- <span class='st_sharethis_large' displayText='ShareThis'></span>-->
+
+                             <div class="mapost_link_sharethise" >
+                             <span class='st_facebook_large' displayText='Facebook'></span>
+                              <span class='st_twitter_large' displayText='Tweet'></span>
+                              <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                              <span class='st_pinterest_large' displayText='Pinterest'></span>
+                              <span class='st_email_large' displayText='Email'></span>
+
+                             </div>
+                             <a href="{{item.externallink}}" target="_blank" class="fullread"> Full Read</a>
+
+
+
+
+
+                             </div>
+
+
+
+
+
+                         <div class="clearfix"></div>
+
+                     </div>
+
+
+
+
+
+                 </div>
+
+
+
+ 
+
+
+
+
+
+ <div class="clearfix"></div>
+
+ 
+
+				<div ng-show="filterResult.length > perPage" class="mapaginagiton">
+
+					<!--<div class="mapaginationdiv1"> <a href="javascript:void(0)">Page {{currentPage}} of  {{getNumpages(filterResult.length)}}</a></div>-->
+
+                    <uib-pagination total-items="filterResult.length" ng-model="currentPage" items-per-page="perPage" max-size="2" boundary-links="true" ng-change="pageChanged()"></uib-pagination>
+                    
+ <div class="clearfix"></div>
+                </div>
+
+
+
+                 <div ng-if="filterResult.length == 0" class="callout callout-danger">
+                     <h4>Sorry</h4>
+
+                     <p>No media exists in system right now !!.</p>
+                 </div>
+
+
+
+
+
+
+
+             </div>
+
+
+
+
+
+
+
+
+
+            <div class="clearfix"></div>
+
+
+
+        </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+<!--
+ <span id="spanID1" class='st_sharethis_large' displayText='ShareThis'></span>
+<span class='st_facebook_large' displayText='Facebook' style="display: none;"></span>
+ <span class='st_twitter_large' displayText='Tweet'></span>
+ <span class='st_linkedin_large' displayText='LinkedIn'></span>
+ <span class='st_pinterest_large' displayText='Pinterest'></span>
+ <span class='st_email_large' displayText='Email'></span>-->

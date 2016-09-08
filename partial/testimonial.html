@@ -1,0 +1,116 @@
+<div class="container-fluid testimonialbanner1wrapper">
+
+    <!--<div class="testimonialbannerblock">
+        <h2></h2>
+    </div>-->
+
+    <div class="testimonialbanner1wrapperblock">
+        <h2><content name='testimonialtextheading15774dc14a4d6ba7e21647ef2' id='5774dc14a4d6ba7e21647ef2' > </content></h2>
+        <div class="testimonialbanner1wrapperimg">
+            <content name='testimonialbanner1wrapperimg57bd96886d2917be592c2e04'  id='57bd96886d2917be592c2e04' imgwidth="4728" imgheight="1952" > </content>
+        </div>
+    </div>
+
+</div>
+
+        <div class="container testimonialcontainer">
+
+            <div class="testimonial_row" ng-repeat=" item in  filterResult = (itemList |filter:{status:1}) | orderBy:predicate:true">
+                <div class="testimonial_img"><img ng-src="{{item.path}}">
+                    <h2 ><strong ng-bind="item.title"></strong><!--<span>{{item.add_time | date:'MM.dd.yyyy'}}</span>--></h2>
+                </div>
+                <div class="testimonial_con">
+                    <div class="testimonial_text">
+
+                        <div class="testimonial_blog" ng-bind-html="trustAsHtml(item.testimonial)">
+<!--
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+-->
+                        </div>
+                    </div>
+
+
+                    <!-- 6.30.2016-->
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+
+ <!--           <div class="testimonial_row">
+                <div class="testimonial_img"><img src="../images/logodemoimg.png"></div>
+                <div class="testimonial_con">
+                    <div class="testimonial_text">
+
+                        <div class="testimonial_blog">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+
+                    <h2>Lorem Ipsum is <span>6.30.2016</span> </h2>
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+            <div class="testimonial_row">
+                <div class="testimonial_img"><img src="../images/logodemoimg.png"></div>
+                <div class="testimonial_con">
+                    <div class="testimonial_text">
+
+                        <div class="testimonial_blog">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+
+                    <h2>Lorem Ipsum is <span>6.30.2016</span> </h2>
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+            <div class="testimonial_row">
+                <div class="testimonial_img"><img src="../images/logodemoimg.png"></div>
+                <div class="testimonial_con">
+                    <div class="testimonial_text">
+
+                        <div class="testimonial_blog">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+
+                    <h2>Lorem Ipsum is <span>6.30.2016</span> </h2>
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+            <div class="testimonial_row">
+                <div class="testimonial_img"><img src="../images/logodemoimg.png"></div>
+                <div class="testimonial_con">
+                    <div class="testimonial_text">
+
+                        <div class="testimonial_blog">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+
+                    <h2>Lorem Ipsum is <span>6.30.2016</span> </h2>
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+
+-->
+
+           <!-- <div ng-show="filterResult.length > perPage" class="mapaginagiton">
+
+                &lt;!&ndash;<div class="mapaginationdiv1"> <a href="javascript:void(0)">Page {{currentPage}} of  {{getNumpages(filterResult.length)}}</a></div>&ndash;&gt;
+
+                <uib-pagination total-items="filterResult.length" ng-model="currentPage" items-per-page="perPage" max-size="2" boundary-links="true" ng-change="pageChanged()"></uib-pagination>
+
+                <div class="clearfix"></div>
+            </div>-->
+
+        </div>

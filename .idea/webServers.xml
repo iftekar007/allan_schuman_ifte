@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d089dc86-125a-4419-a33b-9465e80f7ef2" name="allan_schuman" url="http://influxiq.com">
+        <fileTransfer host="influxiq.com" port="22" rootFolder="/home/influxiq/public_html/projects/allan_schuman" accessType="SFTP" password="dfeedfcfdfdcdfcfdfc6dffadf9ddfea" username="influxiq">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

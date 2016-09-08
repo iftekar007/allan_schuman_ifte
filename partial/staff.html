@@ -1,0 +1,119 @@
+<div class="container-fluid staffbanner1wrapper">
+    <div class="staffbanner1wrapperblock">
+        <h2><content name='staffheading577110706a9ef07747df6683' id='577110706a9ef07747df6683' > </content></h2>
+        <div class="staffbanner1wrapperblockimg">
+            <content name='staffbanner57c58b234f15dd9d3f2c96d0' id='57c58b234f15dd9d3f2c96d0'  imgwidth="1920" imgheight="228" > </content>
+           <!-- <img src="/images/staffbanner.jpg">-->
+        </div>
+    </div>
+
+    <!--<div class="staffbannerblock">
+        <h2></h2>
+    </div>-->
+</div>
+
+<div class="container-fluid staffblock1">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2><content name='staffcontaintext1577110a36a9ef07747df6684' id='577110a36a9ef07747df6684' > </content></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid staffblock2">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 stafflist">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff" ng-hide="hideall" ng-repeat="item in filterResult =( itemList | filter:{status:1,type:1}) | orderBy:predicate:true">
+                        <div class="staffwrapper" style="cursor: pointer;" ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})">
+                            <loaded-img isrc="item.path" onloadimg="item.callback(item)"></loaded-img>
+                        </div>
+                        <div class="staffinfo">
+                            <h3><a ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})" ng-bind="item.title"></a></h3>
+                        </div>
+                    </div>
+                   
+				   <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                        <div class="staffwrapper">
+                            <img src="../images/staff-img2.jpg" alt="staff image1">
+                        </div>
+                        <div class="staffinfo">
+                            <h3>Jacq Wilson</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                        <div class="staffwrapper">
+                            <img src="../images/staff-img3.jpg" alt="staff image1">
+                        </div>
+                        <div class="staffinfo">
+                            <h3>Aurthur Rugama</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                        <div class="staffwrapper">
+                            <img src="../images/staff-img4.jpg" alt="staff image1">
+                        </div>
+                        <div class="staffinfo">
+                            <h3>Glenn Lerner</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                        <div class="staffwrapper">
+                            <img src="../images/staff-img5.jpg" alt="staff image1">
+                        </div>
+                        <div class="staffinfo">
+                            <h3>Wayne Lesser</h3>
+                        </div>
+                    </div>
+                -->
+				</div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 stafftitle" >
+                        <h2><content name='staffcontaintext2577110c86a9ef07747df6685' id='577110c86a9ef07747df6685' > </content></h2>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff" ng-hide="hideall" ng-repeat="item in filterResult =( itemList | filter:{status:1,type:2}) | orderBy:predicate:true">
+                            <div class="staffwrapper" ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})" style="cursor: pointer;">
+                                <loaded-img isrc="item.path" onloadimg="item.callback(item)"></loaded-img>
+                            </div>
+                            <div class="staffinfo">
+                                <h3><a ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})" ng-bind="item.title"></a></h3>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                            <div class="staffwrapper">
+                                <img src="../images/staff-img7.jpg" alt="staff image1">
+                            </div>
+                            <div class="staffinfo">
+                                <h3>Catherine Breitenstein</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                            <div class="staffwrapper">
+                                <img src="../images/staff-img8.jpg" alt="staff image1">
+                            </div>
+                            <div class="staffinfo">
+                                <h3>Jeannine Lewis</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singlestaff">
+                            <div class="staffwrapper">
+                                <img src="../images/staff-img9.jpg" alt="staff image1">
+                            </div>
+                            <div class="staffinfo">
+                                <h3>Jodie Steller</h3>
+                            </div>
+                        </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

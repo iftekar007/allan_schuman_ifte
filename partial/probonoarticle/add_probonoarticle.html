@@ -1,0 +1,94 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Probono Artcile Manager
+
+        </h1>
+        <!--<ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Forms</a></li>
+            <li class="active">General Elements</li>
+        </ol>-->
+    </section>
+
+
+
+
+
+    <section class="content">
+        <div class="row">
+
+            <!-- left column -->
+            <div class="col-md-12">
+
+                <!-- general form elements -->
+                <div class="box box-primary" style="overflow:hidden; padding-bottom:40px;">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Add Probono Artcile</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+
+                    <div class="formsection">
+                        <form role="form" angular-validator-submit="addformsubmit1()" name="addform1" novalidate angular-validator>
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label >Title</label>
+                                    <input type="text" class="form-control"  placeholder="Title" name="title"
+                                           ng-model="form.title"
+                                           required-message="'Title can not be blank.'"
+                                           required>
+
+                                    <!-- <span class="errormsg">erroe msg</span>-->
+                                </div>
+                                <div class="form-group">
+                                    <label >Link</label>
+                                    <input type="text" class="form-control"  placeholder="Link" name="link"
+                                           ng-model="form.link"
+                                           required-message="'Link can not be blank.'"
+                                           required>
+
+                                    <!-- <span class="errormsg">erroe msg</span>-->
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label >Priority</label>
+                                    <input type="text" class="form-control"  placeholder="Priority" name="priority"
+                                           ng-model="form.priority"
+                                           required-message="'Priority can not be blank.'"
+                                           required>
+
+                                    <!-- <span class="errormsg">erroe msg</span>-->
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div><!-- /.box -->
+
+
+                    <div style="clear:both;"></div>
+                </div>
+
+            </div>   <!-- /.row -->
+        </div>
+    </section>
+
+
+</div>
+

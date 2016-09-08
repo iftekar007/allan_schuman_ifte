@@ -1,0 +1,115 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Banner Gallery
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a ui-sref="Blog-list">Manage Gallery </a></li>
+            <li><a href="javascript:void(0)" class="active"> Edit Gallery </a></li>
+
+        </ol>
+    </section>
+
+
+
+
+    <section class="content">
+        <div class="row">
+
+
+            <!-- left column -->
+            <div class="col-md-12">
+
+                <!-- general form elements -->
+                <div class="box box-primary" style="overflow:hidden; padding-bottom:40px;">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title"></h3>
+                        <h3 class="box-title">Edit Gallery</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+
+                    <div class="formsection">
+                        <form angular-validator-submit="editformsubmit()"  name="editform" role="form" novalidate angular-validator>
+
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label >Title* :</label>
+                                    <input type="text" class="form-control" placeholder="Title" name="title"
+                                           ng-model="form.title"
+                                           required-message="'Title can not be blank.'"
+                                           required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label >Image*  :</label>
+                                    <input type="button" class="searchbtn btn  btn-md"   value="Upload" ngf-drop ngf-select ng-model="picturupload" ngf-drag-over-class="{accept:'dragover', reject:'dragover-err', delay:100}" ngf-multiple="false" ngf-allow-dir="true" accept="'image/*'" ngf-drop-available="dropAvailable" ngf-capture="camera">
+                                    <div class="progress" ng-show="picturupload[0].progress >= 0"> <div style="width:{{product_upload[0].progress}}%; background:#00c0ef;" ng-bind="picturupload[0].progress + '%'"></div></div>
+                                    <div class="clearfix"></div>
+                                    <div ng-show="filename"><img src="nodeserver/uploads/{{filename}}" style="max-width:100%;" /></div>
+                                    <div><img ng-show="loadershow" class="imgclass" src="images/loading.gif" ></div>
+                                    <div><img ng-show="progressshow" class="imgclass1" src="images/processing.gif" ></div>
+                                    <div><img ng-show="submitload"  class="imgclass4" src="images/submitimg.gif" ></div>
+                                    <div class="clearfix"></div>
+                                    <input type="hidden" class="form-control"  name="imagefile"
+                                           ng-model="form.imagefile"
+                                           required-message="'Please upload a image'"
+                                           required>
+                                    <input ng-show="filename" class="searchbtn btn  btn-md" type="button" value="Crop image" ng-click="cropimage(origname)">
+                                </div>
+                                <div class="form-group">
+                                    <label >Priority* :</label>
+                                    <input type="text" class="form-control" placeholder="Priority" name="priority"
+                                           ng-model="form.priority"
+                                           required-message="'Priority can not be blank.'"
+                                           required>
+                                </div>
+                            </div>
+
+        
+				<div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                                <button ng-disabled="isDisabled" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div><!-- /.box -->
+
+
+                    <div style="clear:both;"></div>
+                </div>
+
+            </div>   <!-- /.row -->
+        </div>
+    </section>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script type="text/ng-template" id="croppopup.html">
+    <div class="confirm_delpopup" >
+        <a ng-click="cancel()" class="shutter-close2 ng-scope" href="javascript:void(0)"><img src="images/popup-Close.png"> </a>
+        <div>
+            <canvas width="700" height="550" id="canvas" image-cropper image="cropper.sourceImage" cropped-image="cropper.croppedImage" crop-width="520" crop-height="410" min-width="260" min-height="250" keep-aspect="true" crop-area-bounds="bounds"></canvas>
+        </div>
+       <!-- <div>Cropped Image (Left: {{bounds.left}} Right: {{bounds.right}} Top: {{bounds.top}} Bottom: {{bounds.bottom}}) Width: {{bounds.getWidth()}} Height: {{bounds.getHeight()}})</div>-->
+        <div class="clearfix">&nbsp;</div>
+        <div ng-show="cropper.croppedImage!=null"><img ng-src="{{cropper.croppedImage}}" /></div>
+        <div class="clearfix">&nbsp;</div>
+
+        <input ng-disabled="cropsaveDisabled" type="button" value="Crop & Save" ng-click="galleryimagecrop()">
+        <div class="imgcrop1" ng-show="cropsaving">Saving...<img src="images/ajax_loading.gif" /></div>
+        <div  ng-show="cropsaving">Saving...<img src="images/ajax_loading.gif" /></div>
+        <div class="clearfix"></div>
+    </div>
+</script>

@@ -1,0 +1,198 @@
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+    /* $(function(){
+
+     stLight.options({publisher: "45137db7-8b13-453d-a8c8-ac5d36794d2e", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+     });*/
+
+    $(window).load( function(){
+        console.log(000);
+        stLight.options({publisher: "45137db7-8b13-453d-a8c8-ac5d36794d2e", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+    });
+</script>
+
+<style>
+    .stButton .chicklets{
+        font-size:14px !important;
+        color: #000 !important;
+        height: 24px !important;
+        line-height: 20px !important;
+        padding-left: 30px !important;
+    }
+    .stButton .sharethis{
+        background-image: url(../images/sharethis.png);
+    }
+</style>
+
+
+
+<div class="container-fluid mediaarticles1wrapper">
+
+    <!--<div class="mediaarticlesbannerblock">
+        <h2></h2>
+    </div>-->
+    <div class="mediaarticles1wrapperblock">
+        <h2><content name='mediaArticlesdetails577115e46a9ef07747df6688' id='577115e46a9ef07747df6688' > </content></h2>
+        <div class="mediaarticles1wrapperblockimg">
+            <content name='mediaarticles1wrapperblockimg57bd988e6d2917be592c2e13' id='57bd988e6d2917be592c2e13' > </content>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+        <div class="container-fluid mediaarticlesblockcontain">
+
+
+
+            <div class="container">
+
+                <div class="mediaarticlesblockright">
+
+
+
+                    <div class="mediaarticlesblockright_text">
+
+
+
+                        <!--<input type="text" class="masearchbox" placeholder="Type Your Search">
+
+                <input type="button" class="masearchbtn" value="">
+
+                <div class="clearfix"></div>-->
+
+
+
+                <h2>Media Types</h2>
+
+
+
+
+
+                <div class="rediodiv1">
+
+				<!--<input id="radio1" ng-click="govideo()" type="radio" name="radio" value="1" checked="checked">-->
+
+				<a ui-sref="media-video"><label>Videos</label></a><span> ({{(totalVideos > 1)?totalVideos+" Videos":totalVideos+" Video"}})</span>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+                <div class="rediodiv1">
+
+				<!--<input id="radio2" ngclick="goarticle()" type="radio" name="radio" value="2">-->
+
+				<a ui-sref="media-articles"><label>Articles</label></a><span> ({{(totalArticles > 1)?totalArticles+" Articles":totalArticles+" Article"}})</span>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+
+
+
+
+                        <div class="clearfix"></div>
+
+
+
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
+
+
+             <div class="mediaarticlesblockleft">
+
+
+
+                 <div class="mediaarticlesblock_row">
+
+                     <h2 ng-bind="itemDet.title"></h2>
+
+                     <h3>{{itemDet.createdtime | date:'MMM dd, yyyy'}}  by {{itemDet.createdby}}</h3>
+
+
+
+
+                     <div style="margin-bottom:25px;" ng-show="itemDet.image">
+                         <div class="videoWrappernew2img"> <img ng-src="nodeserver/uploads/{{itemDet.image}}" alt="#" ></div>
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="mapostblock">
+
+                    <div class="clearfix"></div>
+                         <div style="margin-top:25px;"  class="mapost_text" ng-bind-html="trustAsHtml(itemDet.description)"></div>
+                         <div class="mapost_link">
+
+                             <span class='st_facebook_large' displayText='Facebook'></span>
+                             <span class='st_twitter_large' displayText='Tweet'></span>
+                             <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                             <span class='st_pinterest_large' displayText='Pinterest'></span>
+                             <span class='st_email_large' displayText='Email'></span>
+
+
+
+                         </div>
+
+
+
+
+                         <div class="clearfix"></div>
+
+                     </div>
+
+                     <div class="clearfix"></div>
+                     <div style="margin-top:15px;" ng-show="itemDet.video">
+                         <div class="videoWrappernew2"> <youtube-video class="embed-responsive-item" video-id="itemDet.video"></youtube-video></div>
+                     </div>
+
+
+
+                 </div>
+
+
+
+ 
+
+
+
+
+
+ <div class="clearfix"></div>
+
+ 
+
+				
+
+
+
+
+
+             </div>
+
+
+
+
+
+
+
+
+
+            <div class="clearfix"></div>
+
+
+
+        </div>
+
+            <div class="clearfix"></div>
+
+        </div>

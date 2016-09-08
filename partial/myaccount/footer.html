@@ -1,0 +1,134 @@
+<div class="container-fluid footerblock1">
+
+
+
+    <div class="container">
+
+
+
+        <h2><content name='footertext1576a7b513e5f9c7e13236385' id='576a7b513e5f9c7e13236385' > </content></h2>
+
+        <h3><content name='footertext2576a7b6f3e5f9c7e13236386' id='576a7b6f3e5f9c7e13236386' > </content> </h3>
+
+
+
+
+
+        <a ui-sref="contact" class="footer1link"><content name='footerlink1576a7b903e5f9c7e13236387' id='576a7b903e5f9c7e13236387' > </content></a>
+
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid footerblock2">
+
+
+
+    <div class="container">
+
+        <h2><content name='footertext3576a7bb13e5f9c7e13236388' id='576a7bb13e5f9c7e13236388' > </content></h2>
+
+        <h3><a href="tel: +1 415-563-2111"><content name='footerphonno576a7bcb3e5f9c7e13236389' id='576a7bcb3e5f9c7e13236389' > </content></a></h3>
+
+        <h4><content name='footertext4576a7be53e5f9c7e1323638a' id='576a7be53e5f9c7e1323638a' > </content></h4>
+
+
+
+        <div class="footermenu">
+
+
+
+            <ul>
+
+                <li> <a ui-sref="home" href="javascript:void(0)">Home</a></li>
+
+                <li> <a ui-sref="areasofexpertise" href="javascript:void(0)">Area of Expertise</a></li>
+
+                <li> <a ui-sref="staff" href="javascript:void(0)">Staff</a></li>
+
+                <li> <a ui-sref="media-articles" href="javascript:void(0)">Media</a></li>
+
+                <li> <a ui-sref="probono" href="javascript:void(0)">Pro Bono Work</a></li>
+
+                <li> <a ui-sref="contact" href="javascript:void(0)">Contact us</a></li>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+        <h5><content name='footertext5576a7c093e5f9c7e1323638b' id='576a7c093e5f9c7e1323638b' > </content></h5>
+
+
+
+
+
+        <div class="social_icon_block">
+
+            <a href="javascript:void(0)"><img src="../images/sicon1.png"></a>
+
+            <a href="javascript:void(0)"><img src="../images/sicon2.png"></a>
+
+            <a href="javascript:void(0)"><img src="../images/sicon3.png"></a>
+
+
+
+        </div>
+
+        <div class="divlog">
+            <a href="javascript:void(0)" ng-click="loginopen()" class="loginlink" ng-hide="rootUserid">Login</a>
+            <a ui-sref="logout" class="loginlink" ng-show="rootUserid">Logout</a>
+            <a ui-sref="dashboard" class="dashboard" ng-show="rootUserid">Dashboard</a>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+<!--
+
+<a href="javascript:void(0)" class="contaclinkright">contact us</a>-->
+
+
+<script type="text/ng-template" id="loginmodal.html">
+    <div class="confirm_delpopup" >
+        <a ng-click="cancel()" class="shutter-close2 ng-scope" href="javascript:void(0)"><img src="images/popup-Close.png"> </a>
+        <div class="clearfix"></div>
+        <div class="logologin">
+            <img src="../images/logo_resize.png" alt="logo">
+            <h2>User Login</h2>
+        </div>
+        <form angular-validator-submit="submitLogin()" id="loginform" name="loginform" role="form" novalidate angular-validator>
+            <div class="control-label has-error validationMessage" ng-show="errormsg">Invalid User Name / Password</div>
+
+            <div class="form-group form-padding email_div">
+                <input type="email" class="form-control" placeholder="Enter email" name="email"
+                       ng-model="form.email"
+                       required-message="'Email can not be blank.'"
+                       invalid-message="'Enter valid email address.'"
+                       required>
+            </div>
+            <div class="form-group form-padding">
+                <input type="password" class="form-control"  placeholder="Password" name="password"
+                       ng-model="form.password"
+                       required-message="'Password can not be blank. '"
+                       required>
+            </div>
+
+            <div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                <button type="submit" class="btn btn-primary btn-submit">LOGIN</button>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</script>
+

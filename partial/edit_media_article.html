@@ -1,0 +1,171 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Media Manager
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a ui-sref="Blog-list">Manage Media </a></li>
+            <li><a href="javascript:void(0)" class="active"> Edit Article </a></li>
+
+        </ol>
+    </section>
+
+
+
+
+    <section class="content">
+        <div class="row">
+
+
+            <!-- left column -->
+            <div class="col-md-12">
+
+                <!-- general form elements -->
+                <div class="box box-primary" style="overflow:hidden; padding-bottom:40px;">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title"></h3>
+                        <h3 class="box-title">Edit Article</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+
+                    <div class="formsection">
+                        <form angular-validator-submit="editmediaformsubmit()"  name="add_media" role="form" novalidate angular-validator>
+  <div class="box-body">
+
+                    <div class="form-group">
+                      <label >Created By* :</label>
+                      <input type="text" class="form-control" placeholder="Created By" name="createdby"
+                             ng-model="form.createdby"
+                             required-message="'Name can not be blank.'"
+                             required>
+					</div>
+					
+					<div class="form-group">
+                      <label >Title* :</label>
+                      <input type="text" class="form-control" placeholder="Title" name="title"
+
+                             ng-model="form.title"
+                             required-message="'Title can not be blank.'"
+                             required>
+					</div>
+
+					<div class="form-group">
+                      <label >Description* :</label>
+                      <textarea  ui-tinymce="tinymceOptions"   name="description" indexval="0" ng-model="form.description" required required-message="'Description can not be blank. '"
+
+                                                ></textarea>
+					</div>
+
+      <div class="form-group">
+          <label >External Link* :</label>
+          <input type="text" class="form-control" placeholder="External Link" name="externallink"
+
+                 ng-model="form.externallink"
+                 required-message="'External Link can not be blank.'"
+                 required>
+
+          <!-- <span class="errormsg">erroe msg</span>-->
+      </div>
+
+                       <div class="form-group">
+                           <label >Youtube video :</label>
+                          <div ng-if="media_video_url!=false" style="margin-bottom:10px;" class="embed-responsive embed-responsive-16by9 video-wrapper" >
+                             <youtube-video class="embed-responsive-item" video-id="media_video_url"></youtube-video>
+                           </div>
+
+                          <input type="text" class="form-control" name="search_youtube" ng-model="form.search_youtube" placeholder="Search youtube video">
+                          <div class="clearfix"></div>
+                          <button type="button" class="btn btn-primary searchbtn" ng-click="youtubesearch()">Search</button>
+                          <div class="clearfix"></div>
+
+                          <div class="clearfix"></div>
+
+                          <span class="errormsg has-error validationMessage"></span>
+                      </div>
+
+
+      <div class="form-group">
+          <label >Picture* :</label>
+          <input type="button" class="searchbtn btn  btn-md"   value="Upload" ngf-drop ngf-select ng-model="picturupload" ngf-drag-over-class="{accept:'dragover', reject:'dragover-err', delay:100}" ngf-multiple="false" ngf-allow-dir="true" accept="'image/*'" ngf-drop-available="dropAvailable" ngf-capture="camera">
+
+          <div class="progress" ng-show="picturupload[0].progress >= 0"> <div style="width:{{product_upload[0].progress}}%; background:#00c0ef;" ng-bind="picturupload[0].progress + '%'"></div></div>
+          <div class="clearfix"></div>
+          <div ng-if="form.image"><img src="nodeserver/uploads/{{form.image}}" style="max-width:100%;" /></div>
+          <div class="clearfix"></div>
+
+      </div>
+      <div class="form-group">
+          <label >Priority* :</label>
+          <input type="text" class="form-control" placeholder="Priority" name="priority"
+                 ng-model="form.priority"
+                 required-message="'Priority can not be blank.'"
+                 required>
+      </div>
+
+                  </div><!-- /.box-body -->
+
+                   
+
+   <div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div><!-- /.box -->
+
+
+                    <div style="clear:both;"></div>
+                </div>
+
+            </div>   <!-- /.row -->
+        </div>
+    </section>
+
+
+
+
+</div>
+
+
+
+<script type="text/ng-template" id="youtubeVideo2">
+
+    <div class="ngdialog-message" id="youtubemodal">
+
+        <h4>Select Video</h4>
+
+        <div class="youtubeVideo">
+
+            <img src="images/newloginclose.png" ng-click="cancel()" style="cursor: pointer;"  alt="" class="videopopupclose ngdialog-close" />
+
+            <div ng-repeat="c in vids">
+
+                <div style="margin-bottom:10px;" class="embed-responsive embed-responsive-16by9 video-wrapper" >
+                    <!--         <iframe class="embed-responsive-item" video-id="c.id.videoId" width="80%" height="400"></iframe>
+         -->
+                    <youtube-video class="embed-responsive-item" video-id="c.id.videoId"></youtube-video>
+
+                    <!--<img src="https://i.ytimg.com/vi/{{c.id.videoId}}/mqdefault.jpg" width="100%">
+
+                    <img src="images/`youtube-playbtn.png" class="paly_video"  ng-click="playYvideo(c.id.videoId)" style="cursor:pointer;">-->
+
+                </div>
+
+                <h1>{{c.snippet.title}}</h1>
+
+                <a href="javascript:void(0)" ng-click="addYtVideo1(c)" class="vidAddBtn">ADD</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+
+
+

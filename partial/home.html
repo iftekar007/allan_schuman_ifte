@@ -1,0 +1,304 @@
+<div class="container-fluid homebannerwrapper">
+    <!--<div class="homebannerblock">
+   <h2><content name='homebannertext1576a81443e5f9c7e1323638c' id='576a81443e5f9c7e1323638c' > </content></h2>
+
+        <a  ui-sref="areasofexpertise" class="homebannerlink1"><content name='homebannerlink1576a81883e5f9c7e1323638d' id='576a81883e5f9c7e1323638d' > </content></a>
+        <a ng-click="functionscroll()" href="javascript:void(0)" class="homebannerlink2"> <content name='homebannerlink2576a81bc3e5f9c7e1323638e' id='576a81bc3e5f9c7e1323638e' > </content></a>
+
+
+    </div>-->
+
+
+    <div id="carousel-example-generic" class="carousel carousel-fade slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+         </ol>-->
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div ng-repeat="item in  bannerlist  | filter:{status:1} | limitTo:1 | orderBy:'priority'" class="item" ng-hide="hideall" data-slide-to="0" data-interval="0">
+
+                <loaded-img isrc="item.path" onloadimg="item.callback(item)"></loaded-img>
+
+
+                <div class="homebannerblock_body  ">
+
+                    <div class="homebannerblock1 ">
+                        <h2 class=" wow startAnimation animated zoomIn" data-animate="zoomIn" data-wow-delay="1000ms"  data-wow-duration="2s" style="-webkit-animation-delay: 1000ms; -moz-animation-delay: 700ms; animation-delay: 1000ms;"><content name='homebannertext1576a81443e5f9c7e1323638c' id='576a81443e5f9c7e1323638c' > </content></h2>
+
+                   <!--     <a href="javascript:void(0)" class="homebannerlink1 wow startAnimation animated fadeIn" data-animate="fadeIn" data-wow-delay="1200ms"  data-wow-duration="2s" style="-webkit-animation-delay: 1200ms; -moz-animation-delay: 800ms; animation-delay: 1200ms;"><content name='homebannerlink1576a81883e5f9c7e1323638d' id='576a81883e5f9c7e1323638d' > </content></a>-->
+                        <a ng-click="functionscroll()" href="javascript:void(0)" class="homebannerlink2 wow startAnimation animated slideInUp" data-animate="slideInUp" data-wow-delay="1400ms"  data-wow-duration="2s" style="-webkit-animation-delay: 1400ms; -moz-animation-delay: 1400ms; animation-delay: 1000ms;"> <content name='homebannerlink2576a81bc3e5f9c7e1323638e' id='576a81bc3e5f9c7e1323638e' > </content></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div ng-repeat="item in  bannerlist  | filter:{status:1} | orderBy:'priority'" class="item" ng-hide="hideall"  data-interval="4400" ng-if="$index<1">
+
+                <loaded-img isrc="item.path" onloadimg="item.callback(item)"></loaded-img>
+
+
+                <div class="homebannerblock_body  ">
+
+                    <div class="homebannerblock1 ">
+                        <h2 class=" wow startAnimation animated zoomIn" data-animate="zoomIn" data-wow-delay="1000ms"  data-wow-duration="2s" style="-webkit-animation-delay: 1000ms; -moz-animation-delay: 700ms; animation-delay: 1000ms;"><content name='homebannertext1576a81443e5f9c7e1323638c' id='576a81443e5f9c7e1323638c' > </content></h2>
+
+                       <!-- <a href="javascript:void(0)" class="homebannerlink1 wow startAnimation animated fadeIn" data-animate="fadeIn" data-wow-delay="1200ms"  data-wow-duration="2s" style="-webkit-animation-delay: 1200ms; -moz-animation-delay: 800ms; animation-delay: 1200ms;"><content name='homebannerlink1576a81883e5f9c7e1323638d' id='576a81883e5f9c7e1323638d' > </content></a>-->
+                        <a ng-click="functionscroll()" href="javascript:void(0)" class="homebannerlink2 wow startAnimation animated slideInUp" data-animate="slideInUp" data-wow-delay="1400ms"  data-wow-duration="2s" style="-webkit-animation-delay: 1400ms; -moz-animation-delay: 1400ms; animation-delay: 1000ms;"> <content name='homebannerlink2576a81bc3e5f9c7e1323638e' id='576a81bc3e5f9c7e1323638e' > </content></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div ng-repeat="item in  bannerlist  | filter:{status:1} | orderBy:'priority'" ng-hide="hideall" class="item"  data-interval="6100" ng-if="$index>valsc">
+
+                <!--<img lazy-img="nodeserver/uploads/{{item.bannerfile}}">-->
+
+
+
+
+                <loaded-img isrc="item.path" onloadimg="item.callback(item)"></loaded-img>
+
+
+
+                <div class="homebannerblock_body  ">
+
+                    <div class="homebannerblock1 ">
+                        <h2><content name='homebannertext1576a81443e5f9c7e1323638c' id='576a81443e5f9c7e1323638c' > </content></h2>
+
+                      <!--  <a href="javascript:void(0)" class="homebannerlink1" ><content name='homebannerlink1576a81883e5f9c7e1323638d' id='576a81883e5f9c7e1323638d' > </content></a>-->
+                        <a ng-click="functionscroll()" href="javascript:void(0)" class="homebannerlink2"> <content name='homebannerlink2576a81bc3e5f9c7e1323638e' id='576a81bc3e5f9c7e1323638e' > </content></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <!-- Controls --> <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>-->
+
+    </div>
+
+</div>
+
+
+
+        <div class="container-fluid homeaboutblock">
+
+            <div class="container">
+
+            <div class="homeabouticon"><content name='homeabouticon576a8de33e5f9c7e1323638f' id='576a8de33e5f9c7e1323638f' imgwidth="122" imgheight="122" > </content></div>
+            <h2><content name='homeabouth1576a8e323e5f9c7e13236390' id='576a8e323e5f9c7e13236390' > </content></h2>
+            <h3><content name='homeabouth2576a8e603e5f9c7e13236391' id='576a8e603e5f9c7e13236391' > </content></h3>
+            <h4><content name='homeabouth3576a8e923e5f9c7e13236392' id='576a8e923e5f9c7e13236392' > </content></h4>
+
+            </div>
+        </div>
+
+
+<div class="container-fluid homeaboutblock3">
+
+
+
+        <table width="100%">
+            <tr>
+                <td valign="middle" align="left" class=" homeblock3_left" >
+                    <div class="homeblock3_left_text">
+
+                        <content name='homeblock3text5new576d122cb8e1a2fa1221c6c7' id='576d122cb8e1a2fa1221c6c7' > </content>
+
+                    </div>
+
+                </td>
+                <td valign="middle" align="right"  class=" homeblock3_right">
+                    <content name='homeblock3img576b8010ae456a094e178259' id='576b8010ae456a094e178259'  imgwidth="960" imgheight="640" > </content>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="clearfix"></div>
+
+
+
+    </div>
+
+
+<div class="container-fluid homeaboutblock4">
+
+    <div class="container">
+
+    <h2><content name='homeblock4text1576b8d42cc40b095105c190d' id='576b8d42cc40b095105c190d' > </content></h2>
+    <h3><content name='homeblock4text2576b8d69cc40b095105c190e' id='576b8d69cc40b095105c190e' > </content></h3>
+   <h4><content name='homeblock4text3576b8da6cc40b095105c190f' id='576b8da6cc40b095105c190f' > </content></h4>
+
+    <ul>
+        <li><span><content name='homeblock4li1576b8e0fcc40b095105c1910' id='576b8e0fcc40b095105c1910' > </content></span></li>
+        <li><span><content name='homeblock4li2576b8e39cc40b095105c1911' id='576b8e39cc40b095105c1911' > </content></span></li>
+        <li><span><content name='homeblock4li3576b8e5dcc40b095105c1912' id='576b8e5dcc40b095105c1912' > </content></span></li>
+        <li><span><content name='homeblock4li4576b8e8bcc40b095105c1913' id='576b8e8bcc40b095105c1913' > </content></span></li>
+        <li><span><content name='homeblock4li5576b8eb0cc40b095105c1914' id='576b8eb0cc40b095105c1914' > </content></span></li>
+        <li><span><content name='homeblock4li6576b8ef9cc40b095105c1915' id='576b8ef9cc40b095105c1915' > </content></span></li>
+
+        <div class="clearfix"></div>
+    </ul>
+
+        <div class="clearfix"></div>
+
+
+    <a  ui-sref="areasofexpertise" class="homeaboutblock4_link"><content name='homeaboutblock4_link576b8f63cc40b095105c1916' id='576b8f63cc40b095105c1916' > </content></a>
+
+    </div>
+
+    </div>
+
+
+<div class="container-fluid homeaboutblock5">
+    <div class="container-fluid homeaboutblock5_wrapper">
+
+    <div class="homeblock5_left">
+
+        <div class="homeblock5_lefttextcon">
+        <table width="100%"  border="0">
+            <tr>
+                <td valign="middle">
+
+        <h2><content name='homeblock5_left576ba864f6c8b4f6354f18e9' id='576ba864f6c8b4f6354f18e9' > </content></h2>
+        <h3><content name='homeblock5_left2576ba8b9f6c8b4f6354f18ea' id='576ba8b9f6c8b4f6354f18ea' > </content></h3>
+
+         <div class="deviderdivblock5"></div>
+
+        <h2><content name='homeblock5_left3576ba8f0f6c8b4f6354f18eb' id='576ba8f0f6c8b4f6354f18eb' > </content></h2>
+        <h3><content name='homeblock5_left4576ba92ddabdb323382b7148' id='576ba92ddabdb323382b7148' > </content></h3>
+
+
+
+                </td>
+            </tr>
+        </table>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="homeblock5_right">
+
+        <div class="homeblock5_righttext">
+
+
+
+            <h4><content name='homeblock5_righttext1576bae28bacd72193e2858c2' id='576bae28bacd72193e2858c2' > </content></h4>
+
+<h5><content name='homeblock5_righttext2576bae46bacd72193e2858c3' id='576bae46bacd72193e2858c3' > </content></h5>
+            <a  ui-sref="areasofexpertise" class="homeaboutblock5_link">
+                <content name='homeLearnMore2577103f9022e193a7aaf10b8' id='577103f9022e193a7aaf10b8' > </content>
+            </a>
+
+
+
+        </div>
+        <div class="homeblock5_img">
+            <content name='homeblock5img57bd70fe6d2917be592c2de0' id='57bd70fe6d2917be592c2de0' imgwidth="951" imgheight="1000"> </content>
+        </div>
+    </div>
+
+
+
+    <div class="clearfix"></div>
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid homeaboutblock6">
+    <div class="container">
+    <h2><content name='homeOurPartners57710261c236cf2d5c8e6c57' id='57710261c236cf2d5c8e6c57' > </content></h2>
+
+        <div class="our_partners_div">
+            <h2 style="cursor: pointer;"><content name='ourpartnersdiv1h257765527bce7bc14057b8be8' id='57765527bce7bc14057b8be8' > </content></h2>
+            <div class="partnersimg" style="cursor: pointer;">
+                <content name='ourpartnersdiv1image5776761ebc3de23d4734adab' id='5776761ebc3de23d4734adab' imgwidth="400" imgheight="400" > </content>
+            </div>
+            <h3><content name='ourpartnersdiv1h357765869bce7bc14057b8beb' id='57765869bce7bc14057b8beb' > </content></h3>
+            <div class="fullbio_box"><a href="http://allanschuman.influxiq.com/staff-details/576eb6ab5095f05573b2bb9a/allan-schuman"><content name='ourpartnersdiv1fullbio57765923bce7bc14057b8bec' id='57765923bce7bc14057b8bec' > </content></a></div>
+        </div>
+        <div class="our_partners_div">
+            <h2 style="cursor: pointer;"><content name='ourpartnersdiv2h257765f8f8fb25e4a1be4d9fb' id='57765f8f8fb25e4a1be4d9fb' > </content></h2>
+            <div class="partnersimg" style="cursor: pointer;">
+                <content name='ourpartnersdiv2image57767655bc3de23d4734adac' id='57767655bc3de23d4734adac' imgwidth="400" imgheight="400"  > </content>
+            </div>
+            <h3><content name='ourpartnersdiv21h3577661918fb25e4a1be4da05' id='577661918fb25e4a1be4da05' > </content></h3>
+            <div class="fullbio_box"><a href="http://allanschuman.influxiq.com/staff-details/576ebc535095f05573b2bb9c/jacq-wilson"><content name='ourpartnersdiv1fullbio57765923bce7bc14057b8bec' id='57765923bce7bc14057b8bec' > </content></a></div>
+        </div>
+
+   <!--- <div class="our_partners_div" ng-repeat="item in filterResult =( itemList | filter:{status:1,type:1,featured:1}) | limitTo:2 | orderBy:predicate:reverse">
+        <h2 ng-bind="item.title" ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})" style="cursor: pointer;"></h2>
+
+        <div class="partnersimg"  ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})" style="cursor: pointer;">
+       <!-- <img ng-src="nodeserver/uploads/{{item.picture}}" >
+        <img ng-src="{{item.imgpath}}" >
+        </div>
+        <h3 ng-bind-html="item.description | limitHtml: 500"></h3>
+
+        <div class="fullbio_box">   <a ui-sref="staffdetails({id:item._id,name:getUrlName(item.title)})">Full Bio</a></div>
+
+    </div>-->
+
+
+    <!--<div class="our_partners_div our_partners_divright">
+    <h2>Jacq Wilson</h2>
+        <img src="../images/home6img2.jpg" class="partnersimg" >
+        <h3>Jacq  Wilson  has  devoted  his  entire  career  to  helping  accident victims when they have been injured, harmed or inconvenienced by the  negligence  of  others.<br/><br/>
+
+            He  has  the  privilege  of  litigating tough cases and, accordingly, has earned a reputation for taking on complex cases that other attorneys have refused.  Litigating on behalf of injury victims and their families is the very essence of his practice.</h3>
+
+        <div class="fullbio_box">   <a href="javascript:void(0)">Full Bio</a></div>
+
+    </div>-->
+
+
+
+
+    <div class="clearfix"></div>
+
+
+    <div class="homebottomblock">
+        <a ui-sref="staff" class="viewmorelink"><content name='homebottomVIEWMORE5771046a9dc8ac6f7adf30b4' id='5771046a9dc8ac6f7adf30b4' > </content></a>
+        <div class="clearfix"></div>
+
+    </div>
+
+    </div>
+    </div>
+
+<div ng-repeat="imgx in bannerlist" ng-hide="true">
+    <loaded-img isrc="imgx.path" onloadimg="imgx.callback(imgx)"></loaded-img>
+</div>
+
+
+

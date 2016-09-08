@@ -1,0 +1,259 @@
+
+<script type="text/ng-template" id="contenteditmodal">
+    <div class="modal-header">
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body">
+        <div class="content-wrapper1" ng-show="iseditableformon">
+            <!-- Content Header (Page header) -->
+
+            <section class="content">
+                <div class="row">
+
+
+                    <!-- left column -->
+                    <div class="col-md-12">
+
+                        <!-- general form elements -->
+                        <div class="box box-primary" style="overflow:hidden; padding-bottom:40px;">
+
+                            <!-- form start -->
+
+                            <div class="formsection">
+                                <form angular-validator-submit="submitadminForm()" id="add_Admin" name="add_Admin" role="form" novalidate angular-validator>
+                                    <div class="box-body">
+
+
+                                        <div class="form-group">
+                                            <label >Content Name* :</label>
+                                            <input type="text" class="form-control" placeholder="Content Name" name="cname" disabled="disabled"
+
+                                                   ng-model="form.cname"
+                                                   required-message="'content name  can not be blank.'"
+                                                   required>
+
+                                            <!-- <span class="errormsg">erroe msg</span>-->
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label >Description :</label>
+                                            <input type="text" class="form-control" placeholder="Description" name="description"
+
+                                                   ng-model="form.description"
+                                                    >
+                                            <!-- <span class="errormsg">erroe msg</span>-->
+                                            <div><img ng-show="submitload"  class="imgclass3" src="images/submitimg.gif" ></div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label>Select Type</label>
+                                            <select class="form-control"  name="ctype" ng-change = "ctype(form.ctype)"
+
+                                                    ng-model="form.ctype"
+                                                    required-message="'content type  can not be blank.'"
+                                                    required>
+                                                <option value="">Select a content type</option>
+                                                <option value="text">Text</option>
+                                                <option value="html">Html</option>
+                                                <option value="image">Image</option>
+                                                <option value="video">Video</option>
+                                            </select>
+
+                                        </div>
+
+
+
+                                        <div class="form-group" ng-show="false">
+                                            <label >Multiple ?</label>
+                                            <div >
+                                                <section>
+                                                    <label>Yes</label>
+                                                    <input type=radio ng-click="caclismultiple()" value=yes name=drone ng-model=form.ismultiple validator="contentValidator() === true"invalid-message=contentValidator()>
+                                                </section>
+                                                <section>
+                                                    <label>No</label>
+                                                    <input type=radio ng-click="caclismultiple()" value=no name=drone ng-model=form.ismultiple validator="contentValidator() === true"invalid-message=contentValidator(form.ismultiple)>
+                                                </section>
+                                                <span class="clearfix validationMessage"ng-show=" drone_error">Please select atleast one option !!</span>
+                                                <div class=clearfix></div>
+                                            </div>
+                                            <div class=clearfix></div>
+                                        </div>
+
+
+                                        <div class="form-group chtml" ng-show="chtml">
+                                            <label >Put Html Content  :</label>
+                                            <div class="copyarea" ng-if="chtml">
+                                        <textarea  ui-tinymce="tinymceOptions"   name="chtml[0]" indexval="0"
+
+                                                   ng-model="form.chtml[0]" required
+                                                   required-message="' content   can not be blank. '"
+
+                                                ></textarea>
+
+                                                <div class="clearfix"></div>
+                                                <button  ng-click="delcopy($event)" class="btn delb btn-primary">Delete</button>
+                                            </div>
+                                            <div class="clearfix clearfix1"></div>
+                                            <button  ng-click="addcopy($event)" class="btn btn-primary" ng-show="ismultipleval">Add</button>
+
+                                            <!-- <span class="errormsg">erroe msg</span>-->
+                                        </div>
+
+                                        <div class="form-group ctext" ng-show="ctext">
+                                            <label >Put Text Content  :</label>
+                                            <div class="copyarea" ng-if="ctext">
+                                        <textarea   name="ctext[0]"
+
+                                                    ng-model="form.ctext[0]" indexval="0" required
+                                                    required-message="'content   can not be blank.'"
+
+                                                ></textarea>
+
+                                                <div class="clearfix"></div>
+                                                <button  ng-click="delcopy($event)" class="btn delb btn-primary">Delete</button>
+                                            </div>
+                                            <div class="clearfix clearfix1"></div>
+                                            <button type="button" ng-click="addcopy($event)" class="btn btn-primary" ng-show="ismultipleval">Add</button>
+
+                                            <!-- <span class="errormsg">erroe msg</span>-->
+                                        </div>
+
+
+                                        <div class="form-group uploadbtn_main" ng-show="cimage">
+                                            <div class="copyarea imgc">
+
+                                                <input
+                                                        type="file"
+                                                        ngf-select
+
+                                                         ng-model="cfile"
+                                                        name="cfile"
+                                                        ngf-pattern="'image/*'"
+                                                        accept="image/*"
+                                                        />
+
+                                                <div class="imgclasswrapper">
+                                                <span class="clearfix f1" ><img class="imgf" src="/nodeserver/uploads/{{form.image_url_url}}" /></span></div>
+                                                <div><img ng-hide="loadershow" class="imgclass" src="images/loading.gif" ></div>
+                                                <div><img ng-hide="progressshow" class="imgclass2" src="images/processing.gif" ></div>
+
+
+                                        <span  ng-repeat=" item in form.resumearrn track by $index " class="clearfix  f1 " >
+                                            <div>
+                                                {{item}}
+
+                                            </div>
+
+
+                                            <button type="button" ng-click="delcopy($event)" class="btn delb btn-primary">Delete</button>
+
+
+                                        </span>
+                                                <div class="clearfix"></div>
+
+                                            </div>
+                                            <div class="clearfix clearfix1"></div>
+
+                                            <button type="button" ng-click="addcopy($event)" class="btn btn-primary" ng-show="ismultipleval">Add</button>
+
+                                        </div>
+
+                                </div><!-- /.box-body -->
+
+                                    <div class="clearfix"></div>
+                                    <div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                                        <button ng-disabled="isDisabled" type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="button" ng-click="getpreview()" class="btn btn-primary">Preview</button>
+                                        <button ng-show="cimage"  type="button" ng-click="imagecrop()" class="btn btn-primary">Crop</button>
+                                      <!--  <input ng-show="cimage"  class="btn btn-primary" type="button" ng-click="imagecrop()" value="Crop">-->
+                                    </div>
+                                </form>
+                            </div><!-- /.box -->
+
+
+                            <div style="clear:both;"></div>
+                        </div>
+
+                    </div>   <!-- /.row -->
+                </div>
+            </section>
+
+
+        </div>
+
+
+
+        <div class="imgpreview" ng-show="!iseditableformon" ng-bind-html="previewcontent|sanitize123"></div>
+
+
+
+    </div>
+    <div class="modal-footer modelft">
+        <select ng-model="contenetselected" ng-change="update()" ng-options="x as timeConverter(x.addtime) for x in currentlistdata" class="selectbox" >
+            <!-- <option  ng-repeat="x in currentlistdata">{{timeConverter(x.addtime)}}</option>-->
+        </select>
+        <button class="btn btn-primary btnok" type="button" ng-click="ok()">CLOSE</button>
+        <!--<button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>-->
+        <button class="btn btn-warning btnok" ng-click="iseditableformon = !iseditableformon" ng-show="!iseditableformon" type="button" >BACK</button>
+    </div>
+</script>
+
+
+
+<script type="text/ng-template" id="commonmymodal1">
+
+    <div class="modal-header clsbtn">
+
+        <a class="close" ng-click="modalClose()"><span>&times;</span></a>
+        <!--<h4>&nbsp;</h4>-->
+    </div>
+
+    <div class="modal-body">
+
+        <div class="imgcrop" ng-show="pLoad">Loading Image...<img src="images/ajax_loading.gif" /></div>
+        <div class="imgclasssave" ng-show="cropsaving">Saving...<img src="images/ajax_loading.gif" /></div>
+
+        <div class="image-editor1 imagecropdivcontent">
+
+            <div style="overflow:hidden; width:783px; margin:0 auto;">
+
+                <div class="cropit-image-preview-container">
+
+                    <div class="cropit-image-preview"  ng-mousemove="changepreview1()"></div>
+
+                </div>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <input type="range" class="cropit-image-zoom-input"  name="range1" ng-model="range1" ng-change="changepreview1()">
+
+            </div>
+
+        </div>
+
+        <div style="overflow:hidden; margin:10px auto; margin-top:14px; display:block; width:391px;">
+
+            <img style="width: 100%;" src="{{imagedata2}}" ng-show="imagedata2">
+
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+
+        <div style="width:118px; margin:0 auto;">
+
+            <a href="javascript:void(0);" class="btn btn btn-primary" ng-click="crop1()" data-original-title="" style="width:116px; margin:4px;" ng-disabled="cropsaveDisabled">Crop & Save</a>
+            <div class="imgcrop1" ng-show="cropsaving">Saving...<img src="images/ajax_loading.gif" /></div>
+            <!--<a href="javascript:void(0);" class="btn btn btn-primary" ng-click="modalClose()" data-original-title="" style="width:62px; margin:4px;">Close</a>-->
+
+        </div>
+
+    </div>
+
+</script>

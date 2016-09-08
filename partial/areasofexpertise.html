@@ -1,0 +1,77 @@
+<div class="container-fluid areaofexpertisebanner1wrapper">
+    <!--<div class="areaofexpertisebannerblock">
+        <h2><content name='areasofexpertiseheading157710563c414047a7dc82f3b' id='57710563c414047a7dc82f3b' > </content></h2>
+        <div class="areaofexpertisebannerblockimg">
+            <img src="/images/areaofexpertisebanner.jpg">
+        </div>
+    </div>-->
+    <div class="areaofexpertise1bannerblock">
+        <h2><content name='areasofexpertiseheading157710563c414047a7dc82f3b' id='57710563c414047a7dc82f3b' > </content></h2>
+        <div class="areaofexpertise1bannerblock1img">
+            <content name='areaofexpertise1bannerblock1img57bd8ead6d2917be592c2e01'
+                     id='57bd8ead6d2917be592c2e01' imgwidth="1920" imgheight="228" > </content>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid areaofexpertiseblock1">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2><content name='areasofexpertisetext15771058bbef753c17d6dce4c' id='5771058bbef753c17d6dce4c' > </content></h2>
+                        <p><content name='areasofexpertisetext257710654173bd9977f582e68' id='57710654173bd9977f582e68' > </content></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blockwrapper"></div>
+        </div>
+    </div>
+</div>
+<!--<a class="btn btn-default btncontactus">Contact Us</a>-->
+<div class="container-fluid areaofexpertiseblock2">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 expertiseteam">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleexpertise" ng-repeat="item in  (itemList  | filter:{status:1}) | orderBy:'priority':true">
+                        <a href="javascript:void(0)" ng-click="openexpertmodal(item)" ng-bind="item.title"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a class="btn btn-default singleexpertisebtn" ui-sref="staff" href="javascript:void(0)"><content name='singleexpertisebtn57710d6c6a9ef07747df6682' id='57710d6c6a9ef07747df6682' > </content></a>
+                    </div>
+                </div>
+            </div>
+            <div class="areaofexpertiseblock2img">
+                <content name='areaofexpertiseblock2img57bd8fd46d2917be592c2e02' id='57bd8fd46d2917be592c2e02' > </content>
+            </div>
+        </div>
+    </div>
+    <div class="blockwrapper"></div>
+</div>
+
+
+
+
+<script type="text/ng-template" id="expertise.html">
+    <div class="confirm_delpopup" >
+        <a ng-click="cancel()" class="shutter-close2 ng-scope" href="javascript:void(0)"><img src="images/popup-Close.png"> </a>
+        <div class="clearfix"></div>
+        <div class="areasofexpertise_popup_wrapper">
+
+            <img src="../images/logo.jpg" alt="#">
+
+        <h1 ng-bind="areahead"></h1>
+
+        <p ng-bind-html="areadesc | newline"></p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</script>
+

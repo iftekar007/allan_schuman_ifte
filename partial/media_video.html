@@ -1,0 +1,195 @@
+<!--
+<style>
+
+	.mapaginagiton .pagination a{
+
+		background : none !important;
+
+		border : none !important;
+
+		color : #04b5ca !important;		
+
+	}
+
+	.mapaginagiton .pagination a:hover{
+
+		background: #04b5ca none repeat scroll 0 0!important;
+
+		color : #fff !important;		
+
+	}
+
+	.pagination .active a{
+
+		background: #04b5ca none repeat scroll 0 0!important;
+
+		color: #fff!important;
+
+	}
+
+	.mapaginagiton .pagination .pagination-first a,.mapaginagiton .pagination .pagination-prev a,.mapaginagiton .pagination .pagination-next a,.mapaginagiton .pagination .pagination-last a{
+
+		background: #ffffff none repeat scroll 0 0 !important;
+
+		border: 1px solid #04b5ca !important;
+
+		display:block;
+
+		border-radius : 0 !important;
+
+	}
+
+	.mapaginagiton .pagination .pagination-first a:hover,.mapaginagiton .pagination .pagination-prev a:hover,.mapaginagiton .pagination .pagination-next a:hover,.mapaginagiton .pagination .pagination-last a:hover{
+
+		background: #04b5ca none repeat scroll 0 0 !important;
+
+	}
+
+	.mapaginagiton .disabled{
+
+		display : none !important;		
+
+	}
+
+</style>
+-->
+<!--
+<style>
+
+	.mapaginagiton .pagination a{
+
+		background : none !important;
+
+		border : none !important;
+
+		color : #04b5ca !important;
+
+	}
+
+	.mapaginagiton .pagination a:hover{
+
+		background: #04b5ca none repeat scroll 0 0!important;
+
+		color : #fff !important;
+
+	}
+
+	.pagination .active a{
+
+		background: #04b5ca none repeat scroll 0 0!important;
+
+		color: #fff!important;
+
+	}
+
+	.mapaginagiton .pagination .pagination-first a,.mapaginagiton .pagination .pagination-prev a,.mapaginagiton .pagination .pagination-next a,.mapaginagiton .pagination .pagination-last a{
+
+		background: #ffffff none repeat scroll 0 0 !important;
+
+		border: 1px solid #04b5ca !important;
+
+		display:block;
+
+		border-radius : 0 !important;
+
+	}
+
+	.mapaginagiton .pagination .pagination-first a:hover,.mapaginagiton .pagination .pagination-prev a:hover,.mapaginagiton .pagination .pagination-next a:hover,.mapaginagiton .pagination .pagination-last a:hover{
+
+		background: #04b5ca none repeat scroll 0 0 !important;
+
+	}
+
+	.mapaginagiton .disabled{
+
+		display : none !important;
+
+	}
+
+</style>
+-->
+
+
+
+
+
+<div class="container-fluid testimonialbanner1wrapper">
+   <!-- <div class="mediaarticlesbannerblock">
+        <h2><content name='mediaheading15771157a6a9ef07747df6686' id='5771157a6a9ef07747df6686' > </content></h2>
+        <div class="testimonialbanner1wrapperimg">
+            <content name='testimonialbanner1wrapperimg57bd96886d2917be592c2e04' id='57bd96886d2917be592c2e04' > </content>
+        </div>
+    </div>-->
+
+    <div class="testimonialbanner1wrapperblock">
+        <h2><content name='mediaheading157c0ad686d2917be592c30c4' id='57c0ad686d2917be592c30c4' > </content></h2>
+        <div class="testimonialbanner1wrapperimg">
+            <content name='mediavideobanner57c0b9d96d2917be592c30e8' id='57c0b9d96d2917be592c30e8' imgwidth="1920" imgheight="228" > </content>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mediaarticlesblockcontain">
+    <div class="container">
+        <div class="mediaarticlesblockright2">
+            <div class="mediaarticlesblockright_text">
+                <input type="text" class="masearchbox" name="search" ng-model="searchkey" placeholder="Type Your Search">
+                <input type="button" class="masearchbtn" value="">
+                <div class="clearfix"></div>
+                <h2>Media Types</h2>
+                <div class="rediodiv1">
+                    <!--<input id="radio1" ng-click="govideo()" type="radio" name="radio" value="1" checked="checked">-->
+                    <a ui-sref="media-video" ><label>Videos</label></a><span> ({{(totalVideos > 1)?totalVideos+" Videos":totalVideos+" Video"}})</span>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="rediodiv1">
+                    <!--<input id="radio2" ngclick="goarticle()" type="radio" name="radio" value="2">-->
+                    <a ui-sref="media-articles"><label>Articles</label></a><span> ({{(totalArticles > 1)?totalArticles+" Articles":totalArticles+" Article"}})</span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="mediaarticlesblockleft">
+            <div class="mediamedia-video_block">
+                <div class="media-video_row media-video-list-new" ng-repeat=" item in  filterResult = (medialist |filter:{status:1}|filter:{video_type:1} | filter:search | orderBy:'priority':true) | startFrom:(currentPage-1)*perPage | limitTo:perPage " id="{{item._id}}" style="background-color: #000;">
+
+                    <div class="imgdiv" style="display: block;">
+                        <div class="videoWrappernew"> <img src="https://i.ytimg.com/vi/{{item.media_file}}/hqdefault.jpg" alt="#" ></div>
+                        <div class="media-video_info">
+                            <div class="media-video_info_con ">
+                                <img  ng-click="vidoopen(item)" style="cursor:pointer" src="../images/videoplay.png" alt="#" class="videoplay">
+                            </div>
+                            <h2>{{item.media_name | limitTo:32}} {{item.media_name > 32 ? '..' : ''}}</h2>
+                        </div>
+                    </div>
+                    <div class="videodiv">
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <div ng-show="filterResult.length > perPage" class="mapaginagiton">
+                <!--<div class="mapaginationdiv1"> <a href="javascript:void(0)">Page {{currentPage}} of  {{getNumpages(filterResult.length)}}</a></div>-->
+                <uib-pagination total-items="filterResult.length" ng-model="currentPage" ng-change="pageChanged()"  items-per-page="perPage" max-size="2" boundary-links="true"></uib-pagination>
+                <div class="clearfix"></div>
+            </div>
+
+            <div ng-if="filterResult.length == 0" class="callout callout-danger">
+                <h4>Sorry</h4>
+
+                <p>No media exists in system right now !!.</p>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+

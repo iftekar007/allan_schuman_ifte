@@ -1,0 +1,36 @@
+
+<script type="text/ng-template" id="loginmodal.html">
+    <div class="confirm_delpopup" >
+        <a ng-click="cancel()" class="shutter-close2 ng-scope" href="javascript:void(0)"><img src="images/popup-Close.png"> </a>
+        <div class="clearfix"></div>
+        <div class="logologin">
+            <img src="../images/logo_resize.png" alt="logo">
+            <h2>User Login</h2>
+        </div>
+
+        <form angular-validator-submit="submitLogin()" id="loginform" name="loginform" role="form" novalidate angular-validator>
+            <div class="control-label has-error validationMessage" ng-show="errormsg">Invalid User Name / Password</div>
+
+            <div class="form-group form-padding email_div">
+                <input type="email" class="form-control" placeholder="Enter email" name="email"
+                       ng-model="form.email"
+                       required-message="'Email can not be blank.'"
+                       invalid-message="'Enter valid email address.'"
+                       required>
+            </div>
+            <div class="form-group form-padding">
+                <input type="password" class="form-control"  placeholder="Password" name="password"
+                       ng-model="form.password"
+                       required-message="'Password can not be blank. '"
+                       required>
+            </div>
+
+            <div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                <button type="submit" class="btn btn-primary btn-submit">LOGIN</button>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</script>
+
+

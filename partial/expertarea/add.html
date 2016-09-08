@@ -1,0 +1,54 @@
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>Area Of Expert Manager</h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a ui-sref="Blog-list">Manage Area Of Expert </a></li>
+            <li><a href="javascript:void(0)" class="active"> Add Area Of Expert </a></li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary" style="overflow:hidden; padding-bottom:40px;">
+                    <div class="box-header with-border">
+                        <h3 class="box-title"></h3>
+                        <h3 class="box-title">Add Area Of Expert</h3>
+                    </div>
+                    <div class="formsection">
+                        <form angular-validator-submit="addformsubmit()"  name="addform" role="form" novalidate angular-validator>
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label >Title* :</label>
+                                    <input type="text" class="form-control" placeholder="Title" name="title"
+                                           ng-model="form.title"
+                                           required-message="'Title can not be blank.'"
+                                           required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label >Description*  :</label>
+                                    <textarea class="form-control" placeholder="Description" name="description" ng-model="form.description" required required-message="'Description can not be blank. '"></textarea>
+
+                                </div>
+                                <div class="form-group">
+                                    <label >Priority* :</label>
+                                    <input type="text" class="form-control" placeholder="Priority" name="priority"
+                                           ng-model="form.priority"
+                                           required-message="'Priority can not be blank.'"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="box-footer" style="background:none; height:auto; padding-bottom:0px; padding-top:0px;">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

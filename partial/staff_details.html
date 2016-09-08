@@ -1,0 +1,41 @@
+<div class="container-fluid staffdetailblockwrapper">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 staffdetailleft" style="z-index: 10;">
+                        <div class="staffdetailleftimg">
+                            <div class="staffdetailleftblock">
+                                <div class="fullwidthimg">
+                                        <img lazy-img="{{imgpath}}" ng-click="openLightboxModal($event,0)" style="cursor: pointer;">
+                                </div>
+                                <div class="fullwidthimg2" ng-show="itemDet._id=='576ebc535095f05573b2bb9c'">
+                                    <div class="halfleftimgdiv">
+                                        <content imgwidth="189" imgheight="149"  name='staffdetailsimageleft57c53a81dbd8965e64335bb3' id='57c53a81dbd8965e64335bb3' ng-click="openLightboxModal($event,1)" style="cursor: pointer;" ng-show="itemDet._id=='576ebc535095f05573b2bb9c'" alt="jacqdetail left" > </content>
+                                       <!-- <img src="../images/jacqdetailleft.jpg" ng-click="openLightboxModal(1)" style="cursor: pointer;" ng-show="itemDet._id=='576ebc535095f05573b2bb9c'" alt="jacqdetail left">-->
+                                    </div>
+                                    <div class="halfrightimgdiv">
+                                        <content imgwidth="964" imgheight="643"  name='staffdetailsimageright157c5492d90affff551d2d2f7' id='57c5492d90affff551d2d2f7' ng-click="openLightboxModal($event,2)" style="cursor: pointer;" ng-show="itemDet._id=='576ebc535095f05573b2bb9c'" alt="jacqdetail right" > </content>
+                                       <!-- <img src="../images/jacqdetailright.jpg" ng-click="openLightboxModal(2)" style="cursor: pointer;" ng-show="itemDet._id=='576ebc535095f05573b2bb9c'" alt="jacqdetail right">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 staffdetailright">
+                        <h1 ng-bind="itemDet.title"></h1>
+                        <h3 ng-bind="itemDet.designation"></h3>
+                        <ul ng-if="itemDet.phone!='' && itemDet.phone!=''">
+                            <li ng-if="itemDet.phone!=''"><img src="../images/icon-phone.png"><span ng-bind="itemDet.phone"></span></li>
+                            <li ng-if="itemDet.email!=''"><img src="../images/icon-email.png"><span ng-bind="itemDet.email"></span></li>
+                           <!-- <li><img src="../images/icon-card.png"><span>V-Card</span></li>-->
+                        </ul>
+                        <p ng-bind-html="trustAsHtml(itemDet.description)"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

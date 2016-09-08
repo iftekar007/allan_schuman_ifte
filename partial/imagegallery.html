@@ -1,0 +1,38 @@
+<div class="container-fluid imagegallerybanner1wrapper">
+    <!--<div class="imagegallerybannerblock">
+        <h2>Photo Gallery</h2>
+    </div>-->
+    <div class="imagegallerybanner1wrapperblock">
+        <h2><content name='imagegallerybanner1wrapperblock57bdac816d2917be592c2ea4' id='57bdac816d2917be592c2ea4' > </content></h2>
+        <div class="imagegallerybanner1wrapperblockimg">
+            <content name='imagegallerybanner1wrapperblockimg57bdacf86d2917be592c2ea9' id='57bdacf86d2917be592c2ea9' imgwidth="1920" imgheight="228" > </content>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid imagegalleryblock1">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="gallerylists">
+                            <!-- The container for the list of example images -->
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 galleryimage" ng-repeat=" item in  galleryList">
+                                    <div class="mainhoverdiv" ng-click="openLightboxModal($index)">
+                                        <div style="padding: 10px 0px; height: 190px;">
+                                            <img ng-src="{{item.thumbUrl}}">
+                                            <div class="imageoverlay2" >
+                                                <img src="../images/iconzoom.png" alt="icon zoom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
